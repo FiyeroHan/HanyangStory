@@ -7,14 +7,13 @@ public class Answer : MonoBehaviour
     public bool isCorrect = false;
     public QuizManager quizManager;
 
-    
+
     public void Answers()
     {
         if(isCorrect)
         {
             Debug.Log("정답입니다.");
             quizManager.correct();
-            quizManager.currentQuestion++;
         }
         else
         {
