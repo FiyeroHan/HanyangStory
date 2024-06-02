@@ -13,11 +13,14 @@ public class Answer : MonoBehaviour
         if(isCorrect)
         {
             Debug.Log("정답입니다.");
-            quizManager.correct();
+            quizManager.answerCount++;
+            quizManager.NextQuestion();
+
         }
         else
         {
             Debug.Log("틀렸습니다.");
+            quizManager.NextQuestion();
         }
 
     }

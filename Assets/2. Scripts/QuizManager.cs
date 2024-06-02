@@ -11,9 +11,19 @@ public class QuizManager : MonoBehaviour
 
     public TMP_Text Questiontext;
 
+    public int answerCount = 0;
+
+    public static QuizManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start() {
         makeQuestion();
     }
+
     
     void makeQuestion()
     { 
@@ -25,7 +35,7 @@ public class QuizManager : MonoBehaviour
         
         else
         {
-            Debug.Log("문제를 다 풀었습니다");
+            Questiontext.text = "문제" +answerCount +" 개를 맞췄습니다.";
         }
 
     }
@@ -44,7 +54,7 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void correct()
+    public void NextQuestion()
     {
         qna.RemoveAt(currentQuestion);
 
