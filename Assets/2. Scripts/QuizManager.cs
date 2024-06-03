@@ -11,7 +11,7 @@ public class QuizManager : MonoBehaviour
 
     public TMP_Text Questiontext;
 
-    public int answerCount = 0;
+    public int answerCount;
 
     public static QuizManager instance;
 
@@ -21,6 +21,7 @@ public class QuizManager : MonoBehaviour
     }
 
     void Start() {
+        answerCount = 0;
         makeQuestion();
     }
 
@@ -49,6 +50,7 @@ public class QuizManager : MonoBehaviour
 
             if(qna[currentQuestion].CorrectAnswer == i + 1)
             {
+                Debug.Log(i+1 + "번으로 정답세팅");
                 options[i].GetComponent<Answer>().isCorrect = true;
             }    
         }
