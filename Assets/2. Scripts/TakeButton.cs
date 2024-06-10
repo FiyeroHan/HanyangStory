@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TakeButton : MonoBehaviour
 {   
+
     public void LoadFisrtScene()
     {
         SceneManager.LoadScene("AR UI");
     }
     public void LoadQuizScene()
     {
-        SceneManager.LoadScene("New");
+        SceneManager.LoadScene("QuizStart");
     }
 
     public void LoadStartScene()

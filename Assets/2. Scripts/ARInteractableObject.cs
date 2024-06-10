@@ -5,23 +5,27 @@ using TMPro;
 
 public class ARInteractableObject : MonoBehaviour
 {
-    public int maxInteractionStep;
-    public int currentInteractionStep;
-    public DialogData dialogData;
+    //public int maxInteractionStep;
+    //public int currentInteractionStep;
+    //public DialogData dialogData;
+    public GameManager gameManager;
 
     void Start()
     {
-        maxInteractionStep = dialogData.SoftWareDialog.Length;
-        currentInteractionStep = 0;
-        UpdateObject();
+        //maxInteractionStep = dialogData.SoftWareDialog.Length;
+        //currentInteractionStep = 0;
+        //UpdateObject();
     }
 
     // Update is called once per frame
     public void UpdateObject()
     {
-        this.GetComponentInChildren<TextMeshProUGUI>().text = dialogData.SoftWareDialog[currentInteractionStep];
-        if(currentInteractionStep == maxInteractionStep) currentInteractionStep = 0;
-        else currentInteractionStep++;
+//        Debug.Log("UpdateObject");
+        gameManager.Action(this.gameObject);
+
+        // this.GetComponentInChildren<TextMeshProUGUI>().text = dialogData.SoftWareDialog[currentInteractionStep];
+        // if(currentInteractionStep == maxInteractionStep) currentInteractionStep = 0;
+        // else currentInteractionStep++;
 
     }
 }
