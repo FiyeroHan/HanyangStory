@@ -681,7 +681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 935934999}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickNextButton
         m_Mode: 1
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1321882963}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickYesButton
         m_Mode: 1
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1406066842}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickYesButton
         m_Mode: 1
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1098468766}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickNextButton
         m_Mode: 1
@@ -1561,7 +1561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1406066842}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickNextButton
         m_Mode: 1
@@ -1772,6 +1772,7 @@ GameObject:
   - component: {fileID: 756643971}
   - component: {fileID: 756643973}
   - component: {fileID: 756643972}
+  - component: {fileID: 756643974}
   m_Layer: 5
   m_Name: ChatPanel(Science)
   m_TagString: Untagged
@@ -1837,6 +1838,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756643970}
   m_CullTransparentMesh: 1
+--- !u!114 &756643974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756643970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 138931794}
+  questManager: {fileID: 602254189}
+  talkManager: {fileID: 1327713365}
+  Text: {fileID: 1180871869}
+  NextButton: {fileID: 1697773518}
+  YesButton: {fileID: 1974318470}
+  questIcon: {fileID: 87313979}
 --- !u!1 &852729516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2004,7 @@ GameObject:
   - component: {fileID: 935934996}
   - component: {fileID: 935934998}
   - component: {fileID: 935934997}
+  - component: {fileID: 935934999}
   m_Layer: 5
   m_Name: ChatPanel(Computer)
   m_TagString: Untagged
@@ -2049,6 +2070,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935934995}
   m_CullTransparentMesh: 1
+--- !u!114 &935934999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935934995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 138931794}
+  questManager: {fileID: 602254189}
+  talkManager: {fileID: 1327713365}
+  Text: {fileID: 1268781704}
+  NextButton: {fileID: 290230726}
+  YesButton: {fileID: 1555685541}
+  questIcon: {fileID: 1064194270}
 --- !u!1 &994988711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2475,7 @@ GameObject:
   - component: {fileID: 1098468763}
   - component: {fileID: 1098468765}
   - component: {fileID: 1098468764}
+  - component: {fileID: 1098468766}
   m_Layer: 5
   m_Name: ChatPanel(Engieneering)
   m_TagString: Untagged
@@ -2500,6 +2541,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098468762}
   m_CullTransparentMesh: 1
+--- !u!114 &1098468766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098468762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 138931794}
+  questManager: {fileID: 602254189}
+  talkManager: {fileID: 1327713365}
+  Text: {fileID: 852729518}
+  NextButton: {fileID: 525667704}
+  YesButton: {fileID: 1793221473}
+  questIcon: {fileID: 727371020}
 --- !u!1 &1180871867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3086,7 @@ GameObject:
   - component: {fileID: 1321882960}
   - component: {fileID: 1321882962}
   - component: {fileID: 1321882961}
+  - component: {fileID: 1321882963}
   m_Layer: 5
   m_Name: ChatPanel(Parmacy)
   m_TagString: Untagged
@@ -3091,6 +3152,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321882959}
   m_CullTransparentMesh: 1
+--- !u!114 &1321882963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321882959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 138931794}
+  questManager: {fileID: 602254189}
+  talkManager: {fileID: 1327713365}
+  Text: {fileID: 1697097410}
+  NextButton: {fileID: 2043488319}
+  YesButton: {fileID: 396341667}
+  questIcon: {fileID: 1093007073}
 --- !u!1 &1327713364
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,6 +3324,7 @@ GameObject:
   - component: {fileID: 1406066839}
   - component: {fileID: 1406066841}
   - component: {fileID: 1406066840}
+  - component: {fileID: 1406066842}
   m_Layer: 5
   m_Name: ChatPanel(Next)
   m_TagString: Untagged
@@ -3309,6 +3390,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406066838}
   m_CullTransparentMesh: 1
+--- !u!114 &1406066842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406066838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 138931794}
+  questManager: {fileID: 602254189}
+  talkManager: {fileID: 1327713365}
+  Text: {fileID: 228438741}
+  NextButton: {fileID: 725158117}
+  YesButton: {fileID: 472946864}
+  questIcon: {fileID: 1632554154}
 --- !u!1 &1431573510
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,7 +3627,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 935934999}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickYesButton
         m_Mode: 1
@@ -4089,7 +4189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 756643974}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickNextButton
         m_Mode: 1
@@ -4332,7 +4432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1098468766}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickYesButton
         m_Mode: 1
@@ -4614,7 +4714,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 756643974}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickYesButton
         m_Mode: 1
@@ -4746,7 +4846,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337108369}
+      - m_Target: {fileID: 1321882963}
         m_TargetAssemblyTypeName: ChatPanel, Assembly-CSharp
         m_MethodName: ClickNextButton
         m_Mode: 1
