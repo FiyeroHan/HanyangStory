@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
     public int questActionIndex; //퀘스트 대화 순서 변수
     public GameObject[] questObject;//퀘스트 오브젝트를 저장할 변수
 
+    
     Dictionary<int, QuestData> questList;
 
     void Awake()
@@ -21,7 +22,7 @@ public class QuestManager : MonoBehaviour
     void GenerateData()
     {
         //퀘스트 ID, 퀘스트 데이터(퀘스트이름, 관련 NPC)
-        questList.Add(10,new QuestData("이공계 하냥이 찾아가기", new int[]{1000, 2000}));
+        questList.Add(10,new QuestData("이공계 하냥이 찾아가기", new int[]{1000, 1000, 2000}));
         questList.Add(20,new QuestData("과기대 하냥이 찾아가기", new int[]{2000, 3000}));
         questList.Add(30,new QuestData("공대 하냥이 찾아가기", new int[]{3000, 4000}));
         questList.Add(40,new QuestData("약대 하냥이 찾아가기", new int[]{4000, 5000}));
@@ -38,7 +39,7 @@ public class QuestManager : MonoBehaviour
     }
 
 
-    public int GetQuestTalkIndex(int id)
+    public int GetQuestTalkIndex()
     {
         //퀘스트 ID + 퀘스트 대화 순서 ex) 1100, 1101 ...
         return questId + questActionIndex;

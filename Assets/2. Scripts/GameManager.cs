@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject scanObject;
     public bool isAction;
     public int talkIndex = 0;
+    public int nowObjId;
     // Start is called before the first frame update
 
     // public static GameManager _instance;
@@ -29,11 +30,12 @@ public class GameManager : MonoBehaviour
         Debug.Log(questManager.CheckQuest());
     }
 
+
     //플레이어가 
     public void Action(GameObject scanObj)
     {
 
-        // Debug.Log("Action");
+        Debug.Log("Action");
         //현재 접근한 오브젝트에서 Id와 npc여부 정보 가져오기
         scanObject = scanObj;
         ObjData objData = scanObj.GetComponent<ObjData>();
@@ -46,10 +48,12 @@ public class GameManager : MonoBehaviour
 
     void Talk(int id, bool isNpc)
     {
-        //대화 데이터 세팅
-        int questTalkIndex =questManager.GetQuestTalkIndex(id);
-        string talkData = talkManager.GetTalk(id + questTalkIndex, talkIndex);
 
+        Debug.Log("Talk");
+        //대화 데이터 세팅
+        int questTalkIndex = questManager.GetQuestTalkIndex();
+        string talkData = talkManager.GetTalk(id + questTalkIndex, talkIndex);
+        // Debug.Log(talkData);
         //대화 끝났을때
         if(talkData == null)
         {
@@ -60,10 +64,10 @@ public class GameManager : MonoBehaviour
         }
 
         //대화 계속하기
-        if(isNpc)
-        {
+        // if(isNpc)
+        // {
             // |으로 나누었을때 앞부분 = 원래 대사
-            talkText.text = talkData.Split('|')[0];
+        talkText.text = talkData;
 
 
             //NPC이미지 보이기
@@ -72,18 +76,19 @@ public class GameManager : MonoBehaviour
 //            portraitImg.sprite = talkManager.GetPortrait(id, int.Parse(talkData.Split('|')[1]));
 
 //            portraitImg.color = new Color(1,1,1,1);
-        }
+        // }
 
-        else
-        {
-            talkText.text = talkData;
+//         else
+//         {
+//             talkText.text = talkData;
 
-            //NPC가 아닐땐 투명도 0
-//            portraitImg.color = new Color(1,1,1,0);
-        }
+//             //NPC가 아닐땐 투명도 0
+// //            portraitImg.color = new Color(1,1,1,0);
+//         }
 
         isAction = true;
-        talkIndex++; // 다음 문장이 나오도록 인덱스 1 증가
+        talkIndex++;
+        return; // 다음 문장이 나오도록 인덱스 1 증가
     }
 
 }

@@ -9,6 +9,7 @@ public class ARInteractableObject : MonoBehaviour
     //public int currentInteractionStep;
     //public DialogData dialogData;
     public GameManager gameManager;
+    public GameObject chatPanel;
 
     void Start()
     {
@@ -20,9 +21,15 @@ public class ARInteractableObject : MonoBehaviour
     // Update is called once per frame
     public void UpdateObject()
     {
-//        Debug.Log("UpdateObject");
-        gameManager.Action(this.gameObject);
+        if(this.gameObject.tag == "questIcon")
+        {
+            gameManager.nowObjId = this.gameObject.GetComponent<ObjData>().id;
+            chatPanel.SetActive(true);
+            this.gameObject.SetActive(false);
+        }
 
+//        Debug.Log("UpdateObject");
+        // gameManager.Action(this.gameObject);
         // this.GetComponentInChildren<TextMeshProUGUI>().text = dialogData.SoftWareDialog[currentInteractionStep];
         // if(currentInteractionStep == maxInteractionStep) currentInteractionStep = 0;
         // else currentInteractionStep++;

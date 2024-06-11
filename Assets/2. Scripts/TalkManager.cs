@@ -8,11 +8,11 @@ public class TalkManager : MonoBehaviour
     public GameManager gameManager;
 
     //대화 데이터를 저장할 Dictionary 변수 생성
-    Dictionary<int, string[]> talkData;
+    public Dictionary<int, string[]> talkData;
 //    Dictionary<int, Sprite> portraitData;
 
     public Sprite[] portaitArr;
-    public int LudoTalkCount = 0;
+
 
     void Awake()
     {
@@ -56,13 +56,12 @@ public class TalkManager : MonoBehaviour
                                         "그럼 혹시 나를 위해 구슬을 찾으러 조사를 가줄 수 있니??"});
 
         talkData.Add(11+1000, new string[]{"고마워! 내 전략은 우리 학교 캠퍼스가 워낙 크니까 전공계열별로 나눠서 탐색해보는거야.",
-                                        "너가 탐색하고 싶은 계열이 어디야? 특별히 선택권을 줄게!"});
+                                        "나는 문과계열과 예체계열을 탐색해볼게. 너가 이공계열을 맡아서 탐색하면 될거같아",
+                                        "아, 본관 앞에 있는 하냥이한테 가봐. 본관에 하냥이가 이공계열을 잘 알고 있거든. 구슬이 어딨는지 알 수도 있어!"});
 
-        talkData.Add(12+1000, new string[]{ "오케이!! 그럼 이공계열을 부탁해. 본관 앞에 있는 하냥이한테 가봐. 본관에 하냥이가 이공계열을 잘 알고 있거든. 구슬이 어딨는지 알 수도 있어!"});
+        talkData.Add(12+1000, new string[]{ "아직 출발 안했어? 본관 앞에 있는 하냥이에게 가보렴!"});
 
-        talkData.Add(13+1000, new string[]{ "아직 출발 안했어? 본관 앞에 있는 하냥이에게 가보렴!"});
-
-        talkData.Add(13+2000, new string[]{ "그래. 너가 올줄 알았어. 내가 발명한 첨단동적위치계산기를 통해 너를 계속 봐왔거든!",
+        talkData.Add(12+2000, new string[]{ "그래. 너가 올줄 알았어. 내가 발명한 첨단동적위치계산기를 통해 너를 계속 봐왔거든!",
                                         "흠흠.. 암튼 반가워. 근데 나한테 어떤 일로 찾아 온거야?",
                                         "(처음 본 하냥이와 있었던 일을 설명한다.)",
                                         "아하! 하여간 칠칠맞긴! 며칠전에 그 광경을 보긴했지.",
@@ -113,9 +112,13 @@ public class TalkManager : MonoBehaviour
             else //기본 대사는 있으면
                 return GetTalk(id-id%10, talkIndex); // 퀘스트 처음 대사
         }
+
         if(talkIndex == talkData[id].Length) 
             return null;
-        else 
+        else
+            // Debug.Log(talkData[id][0]);
+            // Debug.Log(talkIndex); 
+            // Debug.Log(talkData[id][talkIndex]);
             return talkData[id][talkIndex];
         
         /*

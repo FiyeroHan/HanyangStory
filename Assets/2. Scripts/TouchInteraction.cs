@@ -11,13 +11,13 @@ public class TouchInteraction : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-//            Debug.Log("Input.GetMouseButtonDown(0)");
+            Debug.Log("Input.GetMouseButtonDown(0)");
 
             Ray ray = arCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitObject;
             if(Physics.Raycast(ray, out hitObject))
             {
-//                Debug.Log("레이캐스트");
+                Debug.Log("레이캐스트");
                 ARInteractableObject aRInteractableObject = hitObject.transform.GetComponent<ARInteractableObject>();
                 if(aRInteractableObject)
                 {
