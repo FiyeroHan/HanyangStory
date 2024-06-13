@@ -22,12 +22,12 @@ public class QuestManager : MonoBehaviour
     void GenerateData()
     {
         //퀘스트 ID, 퀘스트 데이터(퀘스트이름, 관련 NPC)
-        questList.Add(10,new QuestData("이공계 하냥이 찾아가기", new int[]{1000, 1000, 2000}));
-        questList.Add(20,new QuestData("과기대 하냥이 찾아가기", new int[]{2000, 3000}));
-        questList.Add(30,new QuestData("공대 하냥이 찾아가기", new int[]{3000, 4000}));
-        questList.Add(40,new QuestData("약대 하냥이 찾아가기", new int[]{4000, 5000}));
-        questList.Add(50,new QuestData("소융대 하냥이 찾아가기", new int[]{5000, 6000}));
-        questList.Add(60,new QuestData("전공 배정받으러가기", new int[]{2000, 6000}));
+        questList.Add(10,new QuestData("본관 하냥이 찾아가기", new int[]{1000, 1000, 2000}));
+        questList.Add(20,new QuestData("과기대 하냥이 찾아가기", new int[]{3000, 3000}));
+        questList.Add(30,new QuestData("공대 하냥이 찾아가기", new int[]{4000, 4000}));
+        questList.Add(40,new QuestData("약대 하냥이 찾아가기", new int[]{5000, 5000}));
+        questList.Add(50,new QuestData("소융대 하냥이 찾아가기", new int[]{6000, 6000}));
+        questList.Add(60,new QuestData("구슬 전해주러가기", new int[]{1000}));
         /*
         1000- 시작하냥이
         2000- 이공계 하냥이

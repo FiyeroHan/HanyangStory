@@ -15,6 +15,7 @@ public class ChatPanel : MonoBehaviour
     public Button NextButton;
     public Button YesButton;
     public GameObject questIcon;
+    public GameObject quizUI;
     // public Button STEMhanyang, LiberalArtshanyang, ArtSportHanyang;
 
     private void OnEnable() {
@@ -45,25 +46,29 @@ public class ChatPanel : MonoBehaviour
     public void ClickYesButton()
     {
         gameManager.talkIndex = 0;
-        Debug.Log(questManager.CheckQuest(gameManager.nowObjId)); //questActionIndex 1추가 혹은 QuestLevel 증가.
         this.gameObject.SetActive(false);
         YesButton.gameObject.SetActive(false);
-        // if(chatId == 1110)
-        // {
-        //     STEMhanyang.gameObject.SetActive(true);
-        //     LiberalArtshanyang.gameObject.SetActive(true);
-        //     ArtSportHanyang.gameObject.SetActive(true);
-            
-        // }
-        // else if(false)
-        // {
-
-        // }
-        // else{
-        //     questIcon.SetActive(true);
-        // }
-        questIcon.SetActive(true);
+        if(chatId == 3020 || chatId == 4030 || chatId == 5040 || chatId == 6050)
+        {
+            StartQuiz(chatId);
+            // if(true) //퀴즈정답
+            // {
+            //     Debug.Log(questManager.CheckQuest(gameManager.nowObjId)); //questActionIndex 1추가 혹은 QuestLevel 증가.    
+            // }
+        }
+        else
+        {
+            Debug.Log(questManager.CheckQuest(gameManager.nowObjId)); //questActionIndex 1추가 혹은 QuestLevel 증가.
+            questIcon.SetActive(true);
+        }
         
+        
+    }
+
+    public void StartQuiz(int level)
+    {
+        quizUI.gameObject.SetActive(true);
+
     }
 
     // public void ClickSTEMHanyang()
