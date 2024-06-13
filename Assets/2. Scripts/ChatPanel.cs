@@ -19,6 +19,9 @@ public class ChatPanel : MonoBehaviour
     public GameObject quizUI;
     // public Button STEMhanyang, LiberalArtshanyang, ArtSportHanyang;
 
+    private void Start() {
+        this.gameObject.SetActive(false);
+    }
     private void OnEnable() {
         chatId = gameManager.nowObjId+ questManager.GetQuestTalkIndex();
         questCharId = gameManager.nowObjId + questManager.questId;
