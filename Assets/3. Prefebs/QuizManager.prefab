@@ -44,31 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479d082df1815614da97f8d11ccb4fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  qna:
-  - Question: "\uB2E4\uC74C \uC911 \uC18C\uD504\uD2B8\uC6E8\uC5B4 \uC735\uD569\uB300\uD559
-      \uC18C\uC18D \uD559\uACFC(\uD559\uBD80)\uAC00 \uC544\uB2CC \uAC83\uC740?"
-    Answer:
-    - "ICT\uC735\uD569\uD559\uBD80"
-    - "\uC778\uACF5\uC9C0\uB2A5\uD559\uACFC"
-    - "\uC2A4\uB9C8\uD2B8\uC735\uD569\uD559\uBD80"
-    - "\uCEF4\uD4E8\uD130\uD559\uACFC"
-    CorrectAnswer: 3
-  - Question: "\uD55C\uC591\uB300ERICA\uC758 \uC911\uC559\uB3D9\uC544\uB9AC\uAC00
-      \uC544\uB2CC\uAC83\uC740?"
-    Answer:
-    - HERC
-    - "\uBB49\uAC8C\uAD6C\uB984"
-    - HEMA
-    - "\uC18C\uB9AC\uC6B8\uB9BC"
-    CorrectAnswer: 4
-  - Question: "\uD55C\uC591\uB300\uD559\uAD50ERICA\uC758 \uB9C8\uC2A4\uCF54\uD2B8\uC758
-      \uC774\uB984\uC740?"
-    Answer:
-    - "\uD560\uBA38\uB2C8"
-    - "\uD558\uB0E5\uC774"
-    - "\uD55C\uC2B9\uC6B0"
-    - "\uD558\uB791\uC870"
-    CorrectAnswer: 2
+  qna: []
   options:
   - {fileID: 0}
   - {fileID: 0}
@@ -76,3 +52,6 @@ MonoBehaviour:
   - {fileID: 0}
   currentQuestion: 0
   Questiontext: {fileID: 0}
+  answerCount: 0
+  quizPanel: {fileID: 0}
+  questManager: {fileID: 0}

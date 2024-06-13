@@ -9,6 +9,7 @@ public class ChatPanel : MonoBehaviour
     public GameManager gameManager;
     public QuestManager questManager;
     public TalkManager talkManager;
+    public QuizManager quizManager;
     public TMP_Text Text;
     int chatId;
     int questCharId;
@@ -50,7 +51,7 @@ public class ChatPanel : MonoBehaviour
         YesButton.gameObject.SetActive(false);
         if(chatId == 3020 || chatId == 4030 || chatId == 5040 || chatId == 6050)
         {
-            StartQuiz(chatId);
+            quizUI.gameObject.SetActive(true);
             // if(true) //퀴즈정답
             // {
             //     Debug.Log(questManager.CheckQuest(gameManager.nowObjId)); //questActionIndex 1추가 혹은 QuestLevel 증가.    
@@ -63,12 +64,6 @@ public class ChatPanel : MonoBehaviour
         }
         
         
-    }
-
-    public void StartQuiz(int level)
-    {
-        quizUI.gameObject.SetActive(true);
-
     }
 
     // public void ClickSTEMHanyang()

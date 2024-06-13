@@ -273,6 +273,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arCamera: {fileID: 1726757077}
   questManager: {fileID: 602254189}
+--- !u!114 &121033036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 1002325697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &138931793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1311,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472946862}
   m_CullTransparentMesh: 1
+--- !u!114 &518942313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+  m_PrefabInstance: {fileID: 992977944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479d082df1815614da97f8d11ccb4fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &525667702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,11 +1875,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 1180871869}
   NextButton: {fileID: 1697773518}
   YesButton: {fileID: 1974318470}
   questIcon: {fileID: 87313979}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1 &852729516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,11 +2109,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 1268781704}
   NextButton: {fileID: 290230726}
   YesButton: {fileID: 1555685541}
   questIcon: {fileID: 1064194270}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1001 &992977944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2099,6 +2123,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: quizUI
+      value: 
+      objectReference: {fileID: 1459025002}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: quizPanel
+      value: 
+      objectReference: {fileID: 1025959433}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: Questiontext
+      value: 
+      objectReference: {fileID: 121033036}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: questManager
+      value: 
+      objectReference: {fileID: 602254189}
     - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
       propertyPath: options.Array.data[0]
       value: 
@@ -2247,6 +2287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1200455821}
     m_Modifications:
+    - target: {fileID: 372811986832002184, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 518942313}
     - target: {fileID: 387172518962285181, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -137.66895
@@ -2288,8 +2332,108 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2215.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 98.13
+      value: 844.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440710686825946737, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00018310547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658605500668374061, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921702794411005115, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921702794411005115, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662649777115149944, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 518942313}
+    - target: {fileID: 3743649718561285940, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 518942313}
+    - target: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_text
+      value: "\uD034\uC988 \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSize
+      value: 109.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 109.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4518749418544947610, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 518942313}
+    - target: {fileID: 6865220959576982807, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865220959576982807, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755504034868258754, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755504034868258754, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310214213563203162, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310214213563203162, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_Name
@@ -2297,12 +2441,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1459025003}
   m_SourcePrefab: {fileID: 100100000, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
 --- !u!1 &1002325698 stripped
 GameObject:
@@ -2327,6 +2474,11 @@ GameObject:
 --- !u!1 &1002325702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1774836381137038943, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 1002325697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1025959433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 138704321969090098, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
   m_PrefabInstance: {fileID: 1002325697}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1064194270
@@ -2721,11 +2873,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 852729518}
   NextButton: {fileID: 525667704}
   YesButton: {fileID: 1793221473}
   questIcon: {fileID: 727371020}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1 &1180871867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,11 +3487,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 1697097410}
   NextButton: {fileID: 2043488319}
   YesButton: {fileID: 396341667}
   questIcon: {fileID: 1093007073}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1 &1327713364
 GameObject:
   m_ObjectHideFlags: 0
@@ -3477,11 +3631,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 1431573512}
   NextButton: {fileID: 286135040}
   YesButton: {fileID: 472428903}
   questIcon: {fileID: 1886976323}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1 &1406066838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,11 +3729,12 @@ MonoBehaviour:
   gameManager: {fileID: 138931794}
   questManager: {fileID: 602254189}
   talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
   Text: {fileID: 228438741}
   NextButton: {fileID: 725158117}
   YesButton: {fileID: 472946864}
   questIcon: {fileID: 1632554154}
-  quizUI: {fileID: 0}
+  quizUI: {fileID: 1459025002}
 --- !u!1 &1431573510
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,6 +3871,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431573510}
   m_CullTransparentMesh: 1
+--- !u!1 &1459025002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 1002325697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1459025003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459025002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764c19ecd3603cf42ac67b8fccaf8b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questManager: {fileID: 602254189}
+  gameManager: {fileID: 138931794}
+  talkManager: {fileID: 1327713365}
+  quizManager: {fileID: 518942313}
+  questIconList:
+  - {fileID: 87313979}
+  - {fileID: 727371020}
+  - {fileID: 1093007073}
+  - {fileID: 1064194270}
 --- !u!1 &1555685539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5257,7 @@ SceneRoots:
   - {fileID: 138931795}
   - {fileID: 602254190}
   - {fileID: 1327713366}
+  - {fileID: 992977944}
   - {fileID: 1200455821}
   - {fileID: 411993243}
   - {fileID: 1886976328}
@@ -5083,4 +5266,3 @@ SceneRoots:
   - {fileID: 727371024}
   - {fileID: 1093007077}
   - {fileID: 1064194274}
-  - {fileID: 992977944}
