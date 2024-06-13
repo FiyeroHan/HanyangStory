@@ -21,7 +21,7 @@ public class TouchInteraction : MonoBehaviour
                 ARInteractableObject aRInteractableObject = hitObject.transform.GetComponent<ARInteractableObject>();
                 if(aRInteractableObject)
                 {
-                    // Debug.Log("arInteractableObjet 감지");
+                    Debug.Log("arInteractableObjet 감지");
                     aRInteractableObject.UpdateObject();
                 }
             }

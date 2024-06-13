@@ -16,7 +16,7 @@ public class MultipleImageTracker : MonoBehaviour
 
     public GameObject ARObjectHolder;
 
-    public GameObject SpawnObject, QuizObject;
+//    public GameObject SpawnObject, QuizObject;
     void Awake()
     {
         ResetARObjectSpawn();

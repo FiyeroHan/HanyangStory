@@ -46,12 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   qna: []
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 605618142877382106, guid: c9de1b75b1372d04b893aa2aae97a49d, type: 3}
+  - {fileID: 3958989353647838620, guid: baec30b31962f77458708b0db174670f, type: 3}
+  - {fileID: 9111213666865575985, guid: c957a574e4a927e4089315baf1f748db, type: 3}
+  - {fileID: 6923057076193966319, guid: e4946570568c9974cbddfb603aa4fbf6, type: 3}
   currentQuestion: 0
-  Questiontext: {fileID: 0}
+  Questiontext: {fileID: 4244618642987033591, guid: 1af382f8663f4bf4d91b153c6ee528ec, type: 3}
   answerCount: 0
-  quizPanel: {fileID: 0}
-  questManager: {fileID: 0}
+  quizUI: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  questManager: {fileID: 3183551384660757002, guid: 29d08add42ce13f4ab49f494af4536d3, type: 3}
