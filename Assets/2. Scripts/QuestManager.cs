@@ -26,6 +26,7 @@ public class QuestManager : MonoBehaviour
 
     void Awake()
     {
+        objectCount = 0;
         questList = new Dictionary<int, QuestData>();
         GenerateData();
     }
@@ -79,11 +80,29 @@ public class QuestManager : MonoBehaviour
 
     void NextQuest()
     {
+        if (questId == 10){
+            questObject.SetActive(true);
+        }
+        
+        else if(questId >= 20 && questId <= 50)
+        {
+            objectCount++;
+            objectCountText.text = string.Format( "X {0}", objectCount);    
+        }
+
+        else if (questId == 60)
+        {
+            questObject.SetActive(false);
+            return;
+        }
+
+
         questId += 10;
         questActionIndex = 0;
-        questObject.SetActive(true);
-        objectCount++;
-        objectCountText.text = string.Format( "X {0}", objectCount);
+        Debug.Log(CheckQuest());
+        return;
+        
+
     }
 
 // 열쇠같은 퀘스트 오브젝트 관리 
@@ -102,3 +121,5 @@ public class QuestManager : MonoBehaviour
 
 
 }
+
+//  앞으로할거: 유리구슬, 맵 합치기, 퀘스트 이름 뜨게 하기, 빌드 테스트, 영상 촬영 
