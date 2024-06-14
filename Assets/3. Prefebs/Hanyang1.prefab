@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8898625529899748253
 Transform:
   m_ObjectHideFlags: 0
@@ -32,8 +32,8 @@ Transform:
   m_GameObject: {fileID: 2306555455415732782}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0.25, y: 0.5, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7523574200883085161}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
-  chatPanel: {fileID: 4994229700419110863, guid: 4d453a3af30593741bd7aa559157f11d, type: 3}
+  chatPanel: {fileID: 0}
 --- !u!114 &4403517924262060578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 3786627740891649996, guid: 506943e1984730f429c85baf6c2f7af2, type: 3}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 0}
 --- !u!65 &1693278528931885312
 BoxCollider:
   m_ObjectHideFlags: 0

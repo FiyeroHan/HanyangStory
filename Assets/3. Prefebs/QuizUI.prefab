@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &387172518962285181
 Transform:
   m_ObjectHideFlags: 0
@@ -49,15 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764c19ecd3603cf42ac67b8fccaf8b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
-  talkManager: {fileID: 5373351129111264328, guid: 6496c751ecc0ddd4f90bdb3f6cd3cee3, type: 3}
-  quizManager: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+  questManager: {fileID: 0}
+  gameManager: {fileID: 0}
+  talkManager: {fileID: 0}
+  quizManager: {fileID: 0}
   questIconList:
-  - {fileID: 2306555455415732782, guid: 1b0a6ef1b74952e479404cb569051010, type: 3}
-  - {fileID: 2306555455415732782, guid: 097c574072f83e5479693fbcbde40de0, type: 3}
-  - {fileID: 2306555455415732782, guid: 2492ae33f145e8c48b7a3001004c4c90, type: 3}
-  - {fileID: 2306555455415732782, guid: 4913de5deca696f419cbe5d7678cf89e, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &1205165800058956843
 PrefabInstance:
   m_ObjectHideFlags: 0

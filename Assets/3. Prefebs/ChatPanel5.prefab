@@ -353,16 +353,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
-  talkManager: {fileID: 5373351129111264328, guid: 6496c751ecc0ddd4f90bdb3f6cd3cee3, type: 3}
-  quizManager: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+  gameManager: {fileID: 0}
+  questManager: {fileID: 0}
+  talkManager: {fileID: 0}
+  quizManager: {fileID: 0}
   Text: {fileID: 146278205539860368}
   NextButton: {fileID: 5655092791855130937}
   YesButton: {fileID: 607672734834650631}
   StopButton: {fileID: 6680671968826731519}
-  questIcon: {fileID: 2306555455415732782, guid: 2492ae33f145e8c48b7a3001004c4c90, type: 3}
-  quizUI: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  questIcon: {fileID: 0}
+  quizUI: {fileID: 0}
+  selectPanel: {fileID: 0}
 --- !u!1 &7891525401152938246
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,7 +51,7 @@ public class ChatPanel : MonoBehaviour
         if(gameManager.talkIndex == talkManager.talkData[chatId].Length-1){
             NextButton.gameObject.SetActive(false);
             YesButton.gameObject.SetActive(true);
-            Debug.Log(string.Format("{0}, {1}",chatId, gameManager.talkIndex));
+            //Debug.Log(string.Format("{0}, {1}",chatId, gameManager.talkIndex));
             if(chatId == 1011 && gameManager.talkIndex == 2)
             {
                 selectPanel.SetActive(true);
@@ -74,7 +74,7 @@ public class ChatPanel : MonoBehaviour
         else
         {
             Debug.Log(questManager.CheckQuest(gameManager.nowObjId)); //questActionIndex 1추가 혹은 QuestLevel 증가.
-            questIcon.SetActive(true);
+            //questIcon.SetActive(true);
         }
         
         

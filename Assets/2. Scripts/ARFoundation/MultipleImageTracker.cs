@@ -42,7 +42,7 @@ public class MultipleImageTracker : MonoBehaviour
     {
         string referenceImageName = trackedImage.referenceImage.name;
 
-        spawnedObjects[referenceImageName].transform.position = trackedImage.transform.position;
+        spawnedObjects[referenceImageName].transform.position = new Vector3(trackedImage.transform.position.x -0.25f,trackedImage.transform.position.y + 0.3f,trackedImage.transform.position.z);
         spawnedObjects[referenceImageName].transform.rotation = trackedImage.transform.rotation;
 
         spawnedObjects[referenceImageName].SetActive(true);

@@ -28,24 +28,23 @@ public class quizePanel : MonoBehaviour
         quizManager.makeQuestion();
     }
 
-    private void OnDisable() {
-        quizManager.qna.Clear();
-        if(chatId == 3020)
-        {
-            questIconList[0].SetActive(true);
-        }
-        else if(chatId == 4030)
-        {
-            questIconList[1].SetActive(true);
-        }
-        else if(chatId == 5040)
-        {
-            questIconList[2].SetActive(true);
-        }
-        else if(chatId == 6050)
-        {
-            questIconList[3].SetActive(true);
-        }
-
-    }
+    // private void OnDisable() {
+    //     quizManager.qna.Clear();
+    //     if(chatId == 3020)
+    //     {
+    //         questIconList[0].SetActive(true);
+    //     }
+    //     else if(chatId == 4030)
+    //     {
+    //         questIconList[1].SetActive(true);
+    //     }
+    //     else if(chatId == 5040)
+    //     {
+    //         questIconList[2].SetActive(true);
+    //     }
+    //     else if(chatId == 6050)
+    //     {
+    //         questIconList[3].SetActive(true);
+    //     }
+    // }
 }

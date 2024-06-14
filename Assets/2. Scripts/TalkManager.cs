@@ -172,16 +172,16 @@ public class TalkManager : MonoBehaviour
                 return GetTalk(id-id%10, talkIndex); // 퀘스트 처음 대사
         }
 
-        else if(talkIndex == talkData[id].Length) 
+        if(talkIndex == talkData[id].Length) 
             return null;
         else
             // Debug.Log(talkData[id][0]);
             // Debug.Log(talkIndex); 
             // Debug.Log(talkData[id][talkIndex]);
             return talkData[id][talkIndex];
-        
-        /*
-        if(!talkData.ContainsKey(id)) //id가 포함되어 있지 않다면.
+      
+
+/*        if(!talkData.ContainsKey(id)) //id가 포함되어 있지 않다면.
         {
             if(!talkData.ContainsKey(id-id%10))
             {
@@ -198,10 +198,13 @@ public class TalkManager : MonoBehaviour
                     return talkData[id - id%10][talkIndex];
             }
 
-        } */
-        
-
-        
+        }
+        if(talkIndex == talkData[id].Length)
+        {
+            return null;
+        }
+        else return talkData[id][talkIndex];
+*/        
     }
 
     // public Sprite GetPortrait(int id, int portraitIndex)

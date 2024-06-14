@@ -73,8 +73,8 @@ public class QuestManager : MonoBehaviour
 
     public string CheckQuest()
     {
-        Debug.Log(questId);
-        Debug.Log(questList[questId].questName);
+//        Debug.Log(questId);
+//        Debug.Log(questList[questId].questName);
         return questList[questId].questName;
     }
 
