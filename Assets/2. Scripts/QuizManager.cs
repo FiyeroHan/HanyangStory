@@ -27,6 +27,7 @@ public class QuizManager : MonoBehaviour
     // }
 
     void Start() {
+        quizUI.SetActive(false);
         qna = new List<QuizAndAnswer>();
         answerCount = 0;
         

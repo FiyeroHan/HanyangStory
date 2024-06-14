@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 756643970}
 --- !u!114 &87313986
 MonoBehaviour:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!114 &121033036 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3744451373963149238, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 1098468762}
 --- !u!114 &727371027
 MonoBehaviour:
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!1 &756643970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,7 +1728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &756643971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &935934996
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 935934995}
 --- !u!114 &1064194277
 MonoBehaviour:
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!1 &1093007073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 1321882959}
 --- !u!114 &1093007080
 MonoBehaviour:
@@ -2640,7 +2640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!1 &1098468762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1098468763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3273,7 +3273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1321882960
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3382,7 +3382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1337108366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3480,7 +3480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1406066839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4061,7 +4061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 1406066838}
 --- !u!114 &1632554161
 MonoBehaviour:
@@ -4076,7 +4076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!1001 &1637755406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4718,7 +4718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  gameManager: {fileID: 138931794}
   chatPanel: {fileID: 1337108365}
 --- !u!114 &1886976330
 MonoBehaviour:
@@ -4733,7 +4733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 224463341}
-  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  questManager: {fileID: 602254189}
 --- !u!1 &1974318468
 GameObject:
   m_ObjectHideFlags: 0
