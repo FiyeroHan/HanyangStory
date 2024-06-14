@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public bool isAction;
     public int talkIndex;
     public int nowObjId;
+    
+
     // Start is called before the first frame update
 
     // public static GameManager _instance;

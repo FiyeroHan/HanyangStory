@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils.Datums;
 using UnityEngine;
+using TMPro;
+using UnityEngine.InputSystem.Controls;
+using System.Security.Cryptography.X509Certificates;
+
+
+
 #if UNITY_EDITOR
 using UnityEditor.VersionControl;
 #endif
@@ -11,7 +17,9 @@ public class QuestManager : MonoBehaviour
 {
     public int questId;
     public int questActionIndex; //퀘스트 대화 순서 변수
-    public GameObject[] questObject;//퀘스트 오브젝트를 저장할 변수
+    public GameObject questObject;//퀘스트 오브젝트를 저장할 변수
+    public int objectCount; // 오브젝트 개수
+    public TMP_Text objectCountText;
 
     
     Dictionary<int, QuestData> questList;
@@ -73,6 +81,9 @@ public class QuestManager : MonoBehaviour
     {
         questId += 10;
         questActionIndex = 0;
+        questObject.SetActive(true);
+        objectCount++;
+        objectCountText.text = string.Format( "X {0}", objectCount);
     }
 
 // 열쇠같은 퀘스트 오브젝트 관리 
@@ -81,7 +92,7 @@ public class QuestManager : MonoBehaviour
     //     switch (questId)
     //     {
     //         case 10:
-    //             if(questActionIndex == 2) questObject[0].SetActive(true);
+    //             if(questActionIndex == 2) questObject.SetActive(true);
     //             break;
     //         case 20:
     //             if(questActionIndex == 1) questObject[0].SetActive(false);

@@ -15,6 +15,7 @@ public class ChatPanel : MonoBehaviour
     int questCharId;
     public Button NextButton;
     public Button YesButton;
+    public Button StopButton;
     public GameObject questIcon;
     public GameObject quizUI;
     // public Button STEMhanyang, LiberalArtshanyang, ArtSportHanyang;
@@ -34,6 +35,7 @@ public class ChatPanel : MonoBehaviour
         {
             NextButton.gameObject.SetActive(true);
         }
+        StopButton.gameObject.SetActive(true);
         
 
     }
@@ -67,6 +69,17 @@ public class ChatPanel : MonoBehaviour
         }
         
         
+    }
+
+    public void ClickStopButton()
+    {
+        gameManager.talkIndex = 0;
+
+        StopButton.gameObject.SetActive(false);
+        NextButton.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
+        YesButton.gameObject.SetActive(false);
+
     }
 
     // public void ClickSTEMHanyang()
