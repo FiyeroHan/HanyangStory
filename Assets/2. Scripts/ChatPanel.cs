@@ -21,11 +21,13 @@ public class ChatPanel : MonoBehaviour
     public GameObject selectPanel;
     // public Button STEMhanyang, LiberalArtshanyang, ArtSportHanyang;
 
-    private void Start() {
+    private void Awake() {
         this.gameObject.SetActive(false);
         if(selectPanel){
             selectPanel.SetActive(false);
         }
+    }
+    private void Start() {
     }
     private void OnEnable() {
         chatId = gameManager.nowObjId+ questManager.GetQuestTalkIndex();
