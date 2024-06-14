@@ -18,10 +18,14 @@ public class ChatPanel : MonoBehaviour
     public Button StopButton;
     public GameObject questIcon;
     public GameObject quizUI;
+    public GameObject selectPanel;
     // public Button STEMhanyang, LiberalArtshanyang, ArtSportHanyang;
 
     private void Start() {
         this.gameObject.SetActive(false);
+        if(selectPanel){
+            selectPanel.SetActive(false);
+        }
     }
     private void OnEnable() {
         chatId = gameManager.nowObjId+ questManager.GetQuestTalkIndex();
@@ -47,6 +51,11 @@ public class ChatPanel : MonoBehaviour
         if(gameManager.talkIndex == talkManager.talkData[chatId].Length-1){
             NextButton.gameObject.SetActive(false);
             YesButton.gameObject.SetActive(true);
+            Debug.Log(string.Format("{0}, {1}",chatId, gameManager.talkIndex));
+            if(chatId == 1011 && gameManager.talkIndex == 2)
+            {
+                selectPanel.SetActive(true);
+            }
         }
     }
     public void ClickYesButton()

@@ -48,7 +48,7 @@ public class TalkManager : MonoBehaviour
         /* Quest Talk Data
         퀘스트 번호 + NPC id통해 해당 퀘스트에 해당 NPC가 할 대사를 작성
         */
-        talkData.Add(10+1000, new string[]{ "안녕, 난 한양대학교의 마스코트 하냥이 중 하나인 풍선 하냥이야.", 
+        talkData.Add(10+1000, new string[]{ "안녕, 난 한양대학교의 마스코트 하냥이 중 하나인 하냥동산 하냥이야.", 
                                         "요즘 고민이 하나 있어.. 내가 아끼던 빛구슬이 있는데, 이 구슬이 날라갔는데 깨지는 소리와 함께 잃어버렸어..",
                                         "아, 빛구슬이 뭐냐면, 주변 빛을 흡수해서 빛을 내는 구슬이야.",
                                         "이 구슬을 찾으려고 캠퍼스 여기저기를 조사하려는데 캠퍼스가 너무 커서 나 혼자는 무리인거 있지?",
@@ -56,10 +56,10 @@ public class TalkManager : MonoBehaviour
                                         "그럼 혹시 나를 위해 구슬을 찾으러 조사를 가줄 수 있니??"});
 
         talkData.Add(11+1000, new string[]{"고마워! 내 전략은 우리 학교 캠퍼스가 워낙 크니까 전공계열별로 나눠서 탐색해보는거야.",
-                                        "나는 문과계열과 예체능계열을 탐색해볼게. 너가 이공계열을 맡아서 탐색하면 될거같아",
-                                        "아, 본관 앞에 있는 하냥이한테 가봐. 본관에 하냥이가 이공계열을 잘 알고 있거든. 구슬이 어딨는지 알 수도 있어!"});
+                                        "문과계열, 이과계열, 예체능계열 세개 중에 하나씩 맡자! 너는 어떤거를 선택할래?",
+                                        "좋았어! 이공계열을 부탁해. 아, 본관 앞에 이과 하냥이가 자주 나오는데 본관쪽을 가볼래? 아마 도움이 될 수도 있어!"});
 
-        talkData.Add(12+1000, new string[]{ "아직 출발 안했어? 본관 앞에 있는 하냥이에게 가보렴!"});
+        talkData.Add(12+1000, new string[]{ "아직 출발 안했어? 본관 앞에 있는 이과 하냥이에게 가보렴!"});
 
         talkData.Add(12+2000, new string[]{ "그래. 너가 올줄 알았어. 내가 발명한 첨단동적위치계산기를 통해 너를 계속 봐왔거든!",
                                         "흠흠.. 암튼 반가워. 근데 나한테 어떤 일로 찾아 온거야?",
@@ -147,7 +147,7 @@ public class TalkManager : MonoBehaviour
 
         talkData.Add(51 + 6000, new string[] { "와! 제 알고리즘이 제대로 작동하는거 같아요. 감사합니다! 이제 밤을 안새도 되겠다...",
                                             "아 맞다! 저를 도와준 답례로 이 구슬 조각을 드릴게요.",
-                                            "풍선 하냥이가 당신을 엄청 기다리고있다고 챗봇이 말해주네요. 풍선 하냥이한테 가보시겠어요?" });        
+                                            "풍선 하냥이가 당신을 엄청 기다리고있다고 챗봇이 말해주네요. 하냥동산 하냥이한테 가보시겠어요?" });        
 
         talkData.Add(60 + 5000, new string[] {"1011011010011011..." }); 
 
@@ -157,7 +157,6 @@ public class TalkManager : MonoBehaviour
                                             "하냥이들한테서 많은 정보를 얻었다고? 그거 정말 좋다. 나도 도와주고 정보도 얻고 건물도 탐방하고 1석 3조..??ㅎㅎ",
                                             "내가 부탁한게 조금 덜 미안해졌네. 정말 고마워. 다음에 또 보자!!"});
 
-        Debug.Log(talkData[1000][0]);
    
     }
 
@@ -173,7 +172,7 @@ public class TalkManager : MonoBehaviour
                 return GetTalk(id-id%10, talkIndex); // 퀘스트 처음 대사
         }
 
-        if(talkIndex == talkData[id].Length) 
+        else if(talkIndex == talkData[id].Length) 
             return null;
         else
             // Debug.Log(talkData[id][0]);
