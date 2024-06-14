@@ -2892,6 +2892,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1778043010}
     - target: {fileID: 1720385942761074076, guid: 4d453a3af30593741bd7aa559157f11d, type: 3}
+      propertyPath: selectPanel
+      value: 
+      objectReference: {fileID: 147769086}
+    - target: {fileID: 1720385942761074076, guid: 4d453a3af30593741bd7aa559157f11d, type: 3}
       propertyPath: talkManager
       value: 
       objectReference: {fileID: 838829390}
