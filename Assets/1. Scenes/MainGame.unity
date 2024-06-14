@@ -143,6 +143,22 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1645947038}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: options.Array.data[0]
+      value: 
+      objectReference: {fileID: 1729933199}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: options.Array.data[1]
+      value: 
+      objectReference: {fileID: 1558536485}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: options.Array.data[2]
+      value: 
+      objectReference: {fileID: 343155057}
+    - target: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+      propertyPath: options.Array.data[3]
+      value: 
+      objectReference: {fileID: 465390286}
     - target: {fileID: 6608813052139359276, guid: 4732983bc87e660428b86a817744c432, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1107.4508
@@ -270,6 +286,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &343155057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3942897345452952111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 601894339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &360133072 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4994229700419110863, guid: 4d453a3af30593741bd7aa559157f11d, type: 3}
@@ -352,6 +373,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4913de5deca696f419cbe5d7678cf89e, type: 3}
+--- !u!1 &465390286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8615427736917598106, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 601894339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &497732372 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
@@ -507,6 +533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1043631987}
     m_Modifications:
+    - target: {fileID: 372811986832002184, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1778043010}
     - target: {fileID: 387172518962285181, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -137.66895
@@ -547,6 +577,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 497732372}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1778043010}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: talkManager
+      value: 
+      objectReference: {fileID: 838829390}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: questManager
+      value: 
+      objectReference: {fileID: 1645947038}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: questIconList.Array.data[0]
+      value: 
+      objectReference: {fileID: 570135014}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: questIconList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2130660226}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: questIconList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1966493706}
+    - target: {fileID: 1498990606802474111, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: questIconList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1480624420}
+    - target: {fileID: 3662649777115149944, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1778043010}
+    - target: {fileID: 3743649718561285940, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1778043010}
+    - target: {fileID: 4518749418544947610, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1778043010}
     - target: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
       propertyPath: m_Name
       value: QuizUI
@@ -1895,6 +1969,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2306555455415732782, guid: 4913de5deca696f419cbe5d7678cf89e, type: 3}
   m_PrefabInstance: {fileID: 372893704}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1558536485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2758661752719489463, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 601894339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1589660911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8444948967150340327, guid: 506943e1984730f429c85baf6c2f7af2, type: 3}
@@ -2050,6 +2129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce4c31bdb91dc47a6fdee107d67eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1729933199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1774836381137038943, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
+  m_PrefabInstance: {fileID: 601894339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1778043010 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
