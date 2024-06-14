@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Reflection;
-using Palmmedia.ReportGenerator.Core.Parser.Analysis;
+//using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour, IPointerDownHandler

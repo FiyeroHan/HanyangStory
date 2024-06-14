@@ -247,6 +247,7 @@ MonoBehaviour:
   - "\uC18C\uC735\uB300\uB294 \uB2E8\uACFC\uB300 \uAC74\uBB3C\uC774 \uC5C6\uB2E4\uC639"
   - "\uD034\uC988\uB97C \uC2DC\uC791\uD558\uB3C4\uB85D \uD558\uC9C0. \uB2E4\uC2DC
     \uB9D0\uC744 \uAC78\uB3C4\uB85D!"
+  panel: {fileID: 570037611}
 --- !u!1 &321865328
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &570037612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -390,16 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfcc8fdd6e97f49981ee6ef1cac8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInteractionStep: 0
-  currentInteractionStep: 0
-  dialogData:
-    SoftWareDialog:
-    - "\uB098\uB294 \uC18C\uC735\uB300 \uD558\uB0E5\uC774\uB2E4\uC639"
-    - "\uC18C\uC735\uB300\uC5D0\uB294 ICT\uC735\uD569\uD559\uBD80\uAC00 \uC788\uC9C0\uB801\uC774"
-    - "\uC18C\uC735\uB300\uB294 \uAC74\uBB3C\uC774 \uC5C6\uB2E4\uB2A5"
-    EngineeringDialog: []
-    PharmacyDialog: []
-    ScienceDialog: []
+  gameManager: {fileID: 0}
+  chatPanel: {fileID: 0}
 --- !u!114 &570037616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 1825361146}
+  questManager: {fileID: 0}
 --- !u!225 &570037617
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -421,7 +415,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570037611}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0

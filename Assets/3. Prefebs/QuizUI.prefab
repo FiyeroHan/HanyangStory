@@ -9,13 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 387172518962285181}
+  - component: {fileID: 1498990606802474111}
   m_Layer: 0
   m_Name: QuizUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387172518962285181
 Transform:
   m_ObjectHideFlags: 0
@@ -36,6 +37,27 @@ Transform:
   - {fileID: 4178735681349254243}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1498990606802474111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405917497476238666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764c19ecd3603cf42ac67b8fccaf8b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  talkManager: {fileID: 5373351129111264328, guid: 6496c751ecc0ddd4f90bdb3f6cd3cee3, type: 3}
+  quizManager: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
+  questIconList:
+  - {fileID: 2306555455415732782, guid: 1b0a6ef1b74952e479404cb569051010, type: 3}
+  - {fileID: 2306555455415732782, guid: 097c574072f83e5479693fbcbde40de0, type: 3}
+  - {fileID: 2306555455415732782, guid: 2492ae33f145e8c48b7a3001004c4c90, type: 3}
+  - {fileID: 2306555455415732782, guid: 4913de5deca696f419cbe5d7678cf89e, type: 3}
 --- !u!1001 &1205165800058956843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47,6 +69,14 @@ PrefabInstance:
     - target: {fileID: 3958989353647838620, guid: baec30b31962f77458708b0db174670f, type: 3}
       propertyPath: m_Name
       value: Ex2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199659471409287793, guid: baec30b31962f77458708b0db174670f, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199659471409287793, guid: baec30b31962f77458708b0db174670f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7332345529900964658, guid: baec30b31962f77458708b0db174670f, type: 3}
       propertyPath: m_Pivot.x
@@ -149,6 +179,14 @@ PrefabInstance:
     - target: {fileID: 605618142877382106, guid: c9de1b75b1372d04b893aa2aae97a49d, type: 3}
       propertyPath: m_Name
       value: Ex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056919735210757950, guid: c9de1b75b1372d04b893aa2aae97a49d, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056919735210757950, guid: c9de1b75b1372d04b893aa2aae97a49d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7137580443899573567, guid: c9de1b75b1372d04b893aa2aae97a49d, type: 3}
       propertyPath: m_Pivot.x
@@ -332,6 +370,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ex4
       objectReference: {fileID: 0}
+    - target: {fileID: 8944874048024772791, guid: e4946570568c9974cbddfb603aa4fbf6, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944874048024772791, guid: e4946570568c9974cbddfb603aa4fbf6, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -350,6 +396,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 387172518962285181}
     m_Modifications:
+    - target: {fileID: 405481433708522296, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_text
+      value: "\uD034\uC988 \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 405481433708522296, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_fontSize
+      value: 109.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 405481433708522296, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 109.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 405481433708522296, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401251425564063907, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480087962703039231, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2215.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480087962703039231, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 844.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480087962703039231, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480087962703039231, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00018310547
+      objectReference: {fileID: 0}
     - target: {fileID: 4015732300346751676, guid: 47c2b1f507058f04c9ab72bfa03f59db, type: 3}
       propertyPath: m_Name
       value: Panel
@@ -452,6 +534,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 387172518962285181}
     m_Modifications:
+    - target: {fileID: 1693457529425508105, guid: c957a574e4a927e4089315baf1f748db, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693457529425508105, guid: c957a574e4a927e4089315baf1f748db, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7497127019023416654, guid: c957a574e4a927e4089315baf1f748db, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

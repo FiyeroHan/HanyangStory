@@ -6,17 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/1. Scenes/MenuScene.unity
-    guid: cc542276be6557e4791b752d817b2f68
-  - enabled: 1
-    path: Assets/1. Scenes/AR UI.unity
-    guid: 52ede1209b24d7a42977dd78dd6c2291
-  - enabled: 1
-    path: Assets/1. Scenes/QuizStart.unity
-    guid: dd6a04d70798f5a45accd39243d7cdbe
-  - enabled: 1
-    path: Assets/1. Scenes/New.unity
-    guid: a730a07ef2cb5da4b8ffaf74f6ba39e4
+    path: Assets/1. Scenes/MainScene.unity
+    guid: 024875ded96ddec45ae4d014679d5214
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 120c57a0fa7a456498da56f7201d8d74, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ed420eef27b4571428bb5bce4f972cb9, type: 2}

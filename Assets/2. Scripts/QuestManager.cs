@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils.Datums;
-using UnityEditor.VersionControl;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor.VersionControl;
+#endif
+
 
 public class QuestManager : MonoBehaviour
 {

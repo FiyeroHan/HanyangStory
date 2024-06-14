@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text talkText;
     public GameObject scanObject;
     public bool isAction;
-    public int talkIndex = 0;
+    public int talkIndex;
     public int nowObjId;
     // Start is called before the first frame update
 

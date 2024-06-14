@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7013305670331071075
+--- !u!1 &5626735089342290897
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5188270281349244111}
-  - component: {fileID: 5601457364573435901}
+  - component: {fileID: 5755888224402176414}
+  - component: {fileID: 7628867664352708545}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5188270281349244111
+--- !u!4 &5755888224402176414
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7013305670331071075}
+  m_GameObject: {fileID: 5626735089342290897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8204441, y: 3.1185822, z: 8.321808}
@@ -32,20 +32,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5601457364573435901
+--- !u!114 &7628867664352708545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7013305670331071075}
+  m_GameObject: {fileID: 5626735089342290897}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89e8c6fbb49f9a24a92de6b8ed1357cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkManager: {fileID: 8376455534800730217, guid: 8dcfa28e515d2e94aad1666040707620, type: 3}
-  questManager: {fileID: 3183551384660757002, guid: 29d08add42ce13f4ab49f494af4536d3, type: 3}
+  talkManager: {fileID: 5373351129111264328, guid: 6496c751ecc0ddd4f90bdb3f6cd3cee3, type: 3}
+  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
   talkPanel:
   - {fileID: 4994229700419110863, guid: 4d453a3af30593741bd7aa559157f11d, type: 3}
   - {fileID: 8428434219612008207, guid: ad72a4d1e5fc02747a1558e8a7cfb48a, type: 3}

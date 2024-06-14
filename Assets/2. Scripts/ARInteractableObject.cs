@@ -21,8 +21,10 @@ public class ARInteractableObject : MonoBehaviour
     // Update is called once per frame
     public void UpdateObject()
     {
+        Debug.Log("LeanToooouch");
         if(this.gameObject.tag == "questIcon")
         {
+            Debug.Log("Queeeeeestion");
             gameManager.nowObjId = this.gameObject.GetComponent<ObjData>().id;
             chatPanel.SetActive(true);
             this.gameObject.SetActive(false);

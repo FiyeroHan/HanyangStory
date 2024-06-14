@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4332112680017085938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -89,14 +89,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b21f325f07e4614282ba20a316f8f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 5601457364573435901, guid: 579e9c6ecf43dfa4db213bfeea715be7, type: 3}
-  questManager: {fileID: 3183551384660757002, guid: 29d08add42ce13f4ab49f494af4536d3, type: 3}
-  talkManager: {fileID: 8376455534800730217, guid: 8dcfa28e515d2e94aad1666040707620, type: 3}
+  gameManager: {fileID: 7628867664352708545, guid: 59552431069f97447a84d82bd07a52d8, type: 3}
+  questManager: {fileID: 7156605945918072093, guid: 13d99c0b82428bf43a4ffd95c6b18084, type: 3}
+  talkManager: {fileID: 5373351129111264328, guid: 6496c751ecc0ddd4f90bdb3f6cd3cee3, type: 3}
   quizManager: {fileID: 2876314105039423780, guid: 4732983bc87e660428b86a817744c432, type: 3}
   Text: {fileID: 7783975830646431712}
   NextButton: {fileID: 2442010200263883741}
   YesButton: {fileID: 7847575119863580219}
-  questIcon: {fileID: 4970448746014748040, guid: 74897ddad33c4774f8828312a43902d5, type: 3}
+  questIcon: {fileID: 2306555455415732782, guid: 1b0a6ef1b74952e479404cb569051010, type: 3}
   quizUI: {fileID: 8405917497476238666, guid: 522c7d8c436c5624b8451e6ecabc6c33, type: 3}
 --- !u!1 &983113770783289903
 GameObject:

@@ -12,7 +12,7 @@ public class MultipleImageTracker : MonoBehaviour
 
     Dictionary<string, GameObject> spawnedObjects;
 
-    public TMP_Text debugText;
+    //public TMP_Text debugText;
 
     public GameObject ARObjectHolder;
 
