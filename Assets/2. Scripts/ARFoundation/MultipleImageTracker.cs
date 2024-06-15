@@ -30,19 +30,20 @@ public class MultipleImageTracker : MonoBehaviour
         }
         foreach(ARTrackedImage trackedImage in eventArgs.updated)
         {
-            UpdateSpawnObject(trackedImage);
+            if(trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking) UpdateSpawnObject(trackedImage);
+            else spawnedObjects[trackedImage.referenceImage.name].SetActive(false);
         }
-        foreach(ARTrackedImage trackedImage in eventArgs.removed)
-        {
-            spawnedObjects[trackedImage.name].SetActive(false);
-        }
+        // foreach(ARTrackedImage trackedImage in eventArgs.removed)
+        // {
+        //      spawnedObjects[trackedImage.name].SetActive(false);  
+        // }
     }
 
     void UpdateSpawnObject(ARTrackedImage trackedImage)
     {
         string referenceImageName = trackedImage.referenceImage.name;
 
-        spawnedObjects[referenceImageName].transform.position = new Vector3(trackedImage.transform.position.x -0.25f,trackedImage.transform.position.y + 0.3f,trackedImage.transform.position.z);
+        spawnedObjects[referenceImageName].transform.position = new Vector3(trackedImage.transform.position.x -0.1f,trackedImage.transform.position.y + 0.15f,trackedImage.transform.position.z);
         spawnedObjects[referenceImageName].transform.rotation = trackedImage.transform.rotation;
 
         spawnedObjects[referenceImageName].SetActive(true);
